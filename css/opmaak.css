@@ -80,10 +80,15 @@ li a:hover {
 /*MAIN HOME*/
 /*========================================================================*/
 main {
-    padding: 3em 2em;
+    padding: 3em 3em;
 }
 
-
+#tekst {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
 /*#profiel {
     display: block;
     margin-left: auto;
@@ -177,11 +182,23 @@ p {
 
 body.bright {
     background-color: rgb(32,32,32);
+    color: white;
     transition: .5s;
 }
 
 nav.bright {
     background-color: rgb(32,32,32);
+    transition: .5s;
+}
+
+#overmijsection.bright {
+    background-image: linear-gradient(to top, #604A98, rgb(32,32,32));
+    transition: .5s;
+}
+
+#projectensection.bright {
+    background-image: linear-gradient(to top, #604A98, rgb(32,32,32));
+    color: white;
     transition: .5s;
 }
 
@@ -202,12 +219,13 @@ nav.bright {
 /*========================================================================*/
 #overmijsection {
     padding: 2em;
-    background-image: linear-gradient(to top, #2D2E83, #604A98, #F29AC2, #FBCB9A, white);
+    background-image: linear-gradient(to top, #604A98, #F29AC2, #FBCB9A, white);
     
 }
 
 #overmijsection p {
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
+    font-family: monospace;
     font-size: 1.3em;
         width: 100%;
         margin: 0 1em;
@@ -225,9 +243,11 @@ nav.bright {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    margin: 3em 0em;
+    margin: 1em 0em;
+/*
     background-color: white;
     box-shadow: 0px 0px 10px white;
+*/
     border-radius: 20px;
 }
 
@@ -247,11 +267,49 @@ nav.bright {
 
 #contact p {
     text-align: center;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
 
 
+/*PROJECTEN*/
+/*========================================================================*/
+#projectensection {
+    background-image: linear-gradient(to top, #604A98, #F29AC2, #FBCB9A, white);
+}
 
+.project {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column-reverse;
+/*
+    border: solid;
+    border-radius: 20px;
+    border-color: rgb(32,32,32);
+    border-width: 1px;
+*/
+}
+
+.project img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.project h5 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.4em;
+    margin: 0 0 .5em 0;
+    
+    
+}
 
 
 
@@ -286,7 +344,9 @@ nav.bright {
     margin: 4em 2em;
     border-radius: 20px
 }
-    
+    #overmijsection p {
+        
+    }
 }
 
 @media (min-width: 50em){
@@ -311,6 +371,9 @@ nav.bright {
     background-image: -o-linear-gradient(bottom, #2D2E83, #604A98, #F29AC2, #FBCB9A, white);
     background-image: linear-gradient(to top, #2D2E83, #604A98, #F29AC2, #FBCB9A, white);
   
+}
+    #overmijsection.bright {
+    color: white;
 }
     
     .article1, .article2 {
@@ -337,7 +400,8 @@ nav.bright {
         width: 30%;
         font-size: 2em;
         margin: 0 1em;
-        font-family: 'Caveat', cursive;
+        /* font-family: 'Caveat', cursive; */
+        font-family: monospace;
 }
     
     .intro{
@@ -363,6 +427,11 @@ nav.bright {
         position: absolute;
         bottom: 0;
     }
+    
+    #projectensection {
+        align-items: baseline;
+    }
+    
 }
 
 @media (min-width: 70em){
@@ -402,8 +471,15 @@ nav.bright {
         width: 40%;
         font-size: 3em;
         margin: 0 2em;
-        font-family: 'Caveat', cursive;
+        /* font-family: 'Caveat', cursive; */
+        font-family: monospace;
 }
-    
+    #tekst {
+        visibility: visible;
+        position: relative;
+        bottom: 8em;
+        left: 3.2em;
+        font-family: monospace;
+    }
     
 }
