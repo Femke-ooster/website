@@ -22,7 +22,10 @@ body {
 }
 
 #logo img {
-    width: 4em;
+    width:5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -55,10 +58,13 @@ li a {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; /*gradient voor font*/
     
-    padding: .2em .8em .40em .6em;
+    padding: 10px 15px;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     transition: .3s; /*box-shadow te zien*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li a:hover {
@@ -80,13 +86,17 @@ li a:hover {
 /*MAIN HOME*/
 /*========================================================================*/
 main {
-    padding: 3em 3em;
+    padding: 3em;
+}
+
+#introduction {
+    padding: 2em 0;
 }
 
 #tekst {
     font-size: 2em;
     padding: 0;
-    margin: 0;
+    margin: 0em;
     visibility: hidden;
 }
 /*#profiel {
@@ -130,26 +140,21 @@ h4 {
 }
 */
 h2, h3, h4 {
-    font-family: 'Pacifico';
-    font-size: 3em;
-    
-    background: -webkit-linear-gradient(#FBCB9A, #F29AC2, #604A98, #2D2E83);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; /*gradient voor font*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #252525;
     text-align: center;
     margin: 0em 0em 1em 0em;
 }
 
-article {
-    
-    
+#indexarticle {
+    display: flex;
+    justify-content: center;    
 }
 
 .intro {
-    display: block;
-    margin-left: 23%;
-    margin-right: auto;
-    width: 50%;
+
+    width: 100%;
 }
 
 p {
@@ -218,8 +223,7 @@ nav.bright {
 /*OVER MIJ*/
 /*========================================================================*/
 #overmijsection {
-    padding: 2em;
-    background-image: linear-gradient(to top, #604A98, #F29AC2, #FBCB9A, white);
+    background-image: linear-gradient(to top, #aea0d0, #fdc4de, #ffdbc0, white);
     
 }
 
@@ -234,7 +238,9 @@ nav.bright {
 .articleimg {
     width: 50%;
     margin: 1em;
-    border-radius: 20px
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .article1, .article2 {
@@ -243,7 +249,7 @@ nav.bright {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    margin: 1em 0em;
+    margin: 0em 0em;
 /*
     background-color: white;
     box-shadow: 0px 0px 10px white;
@@ -252,16 +258,13 @@ nav.bright {
 }
 
 
-
+/*CONTACT*/
+/*========================================================================*/
 #contact {
-    display: flex;
-    justify-content: center;
-    
+   
 }
 
 #contact article {
-    
-    margin-bottom: auto;
     margin-top: 6em;;
 }
 
